@@ -6,7 +6,7 @@ models文件夹：scJoint运行后产生的训练模型；
 output文件夹：scJoint运行后得到的输出结果；  
 scJoint_result文件夹：将输出结果进行整合为pando输入做准备；  
 pando_result文件夹：最终结果；  
-util文件夹：必需的依赖工具、函数或公共代码。  
+util文件夹：scJoint运行必需的依赖工具、函数或公共代码。  
 总程序代码主要包括六个步骤的集成，分别是：  
 第一步：data_to_h5.R 数据预处理，将表达矩阵转成h5文件；  
 第二步：h5_to_npz.py 数据预处理，将h5文件转成npz文件；  
@@ -14,4 +14,3 @@ util文件夹：必需的依赖工具、函数或公共代码。
 第四步：scjoint.py 整合RNA-seq数据和ATAC-seq数据程序主函数；  
 第五步：umap_embedding.R scjoint处理后得到的结果处理；  
 第六步：pando.R 推断基因调控网络。  
-以及还包括一些必需的依赖工具、函数或公共代码存放在util文件夹下。  
